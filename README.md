@@ -34,14 +34,14 @@
 
 也可以通过虚拟机看到。LINUX 用的是V4L2（VIDEO FOR LINUX）摄像头，这种摄像头的处理逻辑和windows不同，你会发现在windows上可用的opencv代码完全不受用，同时最大的痛苦还是在于ubuntu下opencv-python和pyqt5版本的冲突，当时忙了好几天的no plugin问题。
 
-![](C:\Users\admin\Desktop\CDOFHI\1717342283711.png)
+![](1717342283711.png)
 
 
 也就是这个问题，后续需要各种调试不同版本的pyqt5版本才勉强解决了显示问题，但是V4L2 摄像头的问题，直到现在也没弄懂。最后放弃了。
 
 我选择的使用cygwin这样的一个工具链去配置jmavsim，成效就是虽然没有摄像头，但是已经能够基本完成飞行，解锁等等功能。效果如下图所示。
 
-![](C:\Users\admin\Desktop\CDOFHI\1717342689396.png)
+![](1717342689396.png)
 
 可用mavsdk去控制jmavsim的起飞降落，以及返回各种数据。
 
@@ -59,7 +59,7 @@ cygwin是一个非常不错好用的unix平台，可以在windows上运行，但
 
 然后安装一些依赖包：
 
-![](C:\Users\admin\Desktop\CDOFHI\1717396984776.png)
+![](1717396984776.png)
 
 这些在px4官网上都给出了。python2的找不到就试着用python3的包即可
 
